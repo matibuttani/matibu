@@ -1,0 +1,429 @@
+/*Estilos HEADER*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*font-family: 'Roboto', sans-serif;*/
+
+
+
+/* #464545
+#2F2F2F
+#1B1B1B
+#F54703
+#FF7518 */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family:'Roboto', sans-serif;
+  font-size: 62.5%;
+ }
+
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 3rem;
+}
+
+p{
+  font-size: 2rem;
+}
+
+
+/*Header----------------------------------------*/
+header img {
+  width: 250px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+header ul{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  background-color: #ff7518;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  
+}
+
+.link{
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #2F2F2F;
+}
+
+/*header{
+  background-color:#ff7518;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+header img {
+  width: 250px;
+}
+
+nav{
+  
+  width: 50%;
+}
+
+header ul{
+
+list-style-type: none;
+display: flex;
+justify-content: space-between;
+margin-right: 8px;
+align-items: center;
+
+}
+
+header ul a{
+  color: #2F2F2F;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+ }
+ */ 
+
+/*Main index-----------------------------------*/
+
+.tituloIndex{
+  height: 400px;
+  text-align: left;
+  background-image: url(../media/FND.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0px;
+
+  
+}
+
+.tituloIndex h1{
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px #F54703;
+  
+  
+}
+
+.tituloIndex p{
+  font-size: 3rem;
+  color: #F54703 ;
+  text-align: center;
+  text-shadow: 2px 2px 2px white;
+  
+}
+
+/*section vectores------------------------*/
+
+.presentacion{
+ background-color: #302f2f;
+  font-size: 2rem;
+}
+
+.presentacion h2{
+  text-align: center;
+  text-decoration: underline;
+  color: #F9A826;
+  padding: 20px 0px ;
+}
+
+.divPadreFlex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.presentacion p{
+  text-align: center;
+  color: #F9A826;
+  align-items: center;
+  padding: 20px;
+}
+
+.presentacion img{
+  width: 200px;
+}
+
+/*section destacados------------------------*/
+
+.destacados{
+  margin-bottom: 20px;
+}
+
+.destacados h2{
+text-align: center;
+color: #ff7518 ;
+text-decoration: underline;
+margin: 20px 0px;
+}
+
+.propia{
+  width: 80%;
+}
+
+
+/*------------ SOBRE NOSOTROS---------------*/ 
+
+.contenedor-grid{
+  display: grid;
+  grid-template-columns: 25% 40% 25% ;
+  grid-template-rows: 150px 200px 200px 200px 150px ;
+  grid-template-areas:
+  "titulo titulo titulo"
+  "foto1 texto1 texto1"
+  "foto1 foto2 foto2"
+  "texto2 foto3 texto3"
+  "subt subt subt";
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  row-gap: 5px;
+  column-gap: 3px;
+  
+
+}
+
+.contenedor-grid img{
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 36px 4px rgba(0,0,0,0.75);
+
+}
+
+.grid-h1{
+  grid-area: titulo;
+  font-size: 50px;
+  color: #ff7518;
+  
+
+}
+
+.grid-img-1{
+  grid-area: foto1;
+  
+
+}
+
+.grid-texto-1{
+  grid-area: texto1;
+
+}
+
+.grid-img-2{
+  grid-area: foto2;
+
+}
+
+.grid-texto-2{
+  grid-area: texto2; 
+
+
+}
+
+.grid-img-3{
+  grid-area: foto3;
+
+}
+
+.grid-texto-3{
+  grid-area: texto3;
+
+}
+
+.grid-h2{
+  grid-area: subt;
+  text-align: center;
+  color: #302f2f
+
+
+}
+
+.contenedor-grid span{
+  color: #ff7518;
+}
+
+/*-----------PRODUCTOS-----------*/
+.productos h1{
+  text-align: center;
+  font-size: 5rem ;
+  color: #ff7518;
+
+}
+
+.prodCafe1, .prodCafe2, .prodCafe3, .prodCafe4{
+  border-radius: 11px 11px 11px 11px;
+  border: 3px solid #2F2F2F;
+  margin: 0 auto;
+}
+
+.prodCafe1 img, .prodCafe2 img, .prodCafe3 img, .prodCafe4 img{
+  height: 500px;
+}
+
+
+/* FOOTER */
+
+footer{
+  background-color: #ff7518;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+footer p:hover{
+  text-decoration: underline;
+}
+
+
+footer img, svg{
+  width: 50px;
+}
+
+.logoTelefono{
+  margin-left: 10px;
+}
+
+footer div{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+footer .iconoInsta{
+border: 1px solid white;
+background-color: white;
+border-radius: 11px;
+
+}
+
+footer .iconoFb{
+border-radius: 50%;
+background-color: white;
+border-radius: 32px;
+}
+
+/*REGLA DE LA MEDIA QUARY*/
+
+/*MOBILE*/
+@media only screen and (max-width: 500px) {
+
+body{
+  background-color: #F9A826;
+}
+
+header{ 
+  flex-direction: column;
+  justify-content: center;
+}
+
+nav{
+  width: 100%
+}
+
+header ul a{
+font-size: 1.5rem;
+}
+
+/* section "Menu" */
+.tituloIndex{
+  height: 200px;
+}
+.tituloIndex h1{
+  font-size: 25px;
+}
+.tituloIndex p{
+  font-size: 15px;
+}
+.presentacion img{
+  width: 80px;
+}
+.presentacion p{
+  font-size: 15px;
+}
+.presentacion h2{
+  font-size: 25px;
+}
+
+.destacados h2{
+  font-size: 25px;
+}
+
+
+/* section "sobre nosotros"*/
+.contenedor-grid{
+  grid-template-areas: 
+  "titulo"
+  "foto1"
+  "texto1"
+  "texto2"
+  "foto3"
+  "texto3"
+  "subt";
+grid-template-columns: 90%;
+grid-template-rows: 150px 350px 200px 100px 100px 100px 300px
+}
+.grid-img-2{ display: none;}
+ 
+/*FOOTER MOBILE*/
+footer img, svg{
+  width: 40px;
+}
+footer div{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+footer p{
+  display: none;
+}
+
+}
+
+
+
+/*TABLET*/ 
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+ body{
+  background-color: coral;
+
+ }
+}
+
+/*DESKTOP */
+@media only screen and (min-width: 961px) {
+  body{
+    background-color: white;
+
+  }
+
+}
